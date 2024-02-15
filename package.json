@@ -14,8 +14,10 @@
     "gulp": "^4.0.2"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.17",
     "browser-sync": "^3.0.2",
     "cssnano": "^6.0.3",
+    "cssnano-preset-lite": "^3.0.1",
     "del": "^7.1.0",
     "gulp-postcss": "^10.0.0",
     "gulp-sass": "^5.1.0",
