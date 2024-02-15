@@ -12,7 +12,7 @@ function htmlTask() {
 
 // Sass Task
 function scssTask() {
-  return src('src/scss/app.scss', { sourcemaps: true })
+  return src('src/scss/app.scss', { sourcemaps: false })
     .pipe(sass())
     .pipe(postcss([cssnano()]))
     .pipe(dest('public/css', { sourcemaps: '.' }));
@@ -20,7 +20,7 @@ function scssTask() {
 
 // JavaScript Task
 function jsTask() {
-  return src('src/js/script.js', { sourcemaps: true })
+  return src('src/js/script.js', { sourcemaps: false })
     .pipe(terser())
     .pipe(dest('public/js', { sourcemaps: '.' }));
 }
