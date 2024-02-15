@@ -1,0 +1,16 @@
+name: Delete SCSS Folder on Master Merge
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  delete_scss_folder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Delete SCSS folder
+        run: rm -rf scss
