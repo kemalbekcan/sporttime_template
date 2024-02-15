@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,56 @@
     <link href="./scss/app.scss">
     <link rel="stylesheet" href="css/app.css">
 </head>
+
 <body>
     <header>
-        <nav>
-            <div id="logo">
-                <img src="img/sporttime-fitness-center.png" alt="">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <a id="logo" href="/">
+                    <img src="/img/sporttime-fitness-center.png" alt="logo" width="182" height="48">
+                </a>
+                <ul class="nav text-sm">
+                    <li>
+                        <a href="/">
+                            <span>
+                                Anasayfa
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact">
+                            <span>
+                                Hakkımızda
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/galeri">
+                            <span>
+                                Galeri
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/paketler">
+                            <span>
+                                Paketler
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/blog">
+                            <span>
+                                Blog
+                            </span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        </div>
     </header>
-
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
