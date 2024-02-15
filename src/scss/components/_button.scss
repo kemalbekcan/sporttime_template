@@ -1,0 +1,34 @@
+@import '../sass-utils/_variables.scss';
+
+button {
+    display: block;
+    border: 1px solid red;
+}
+
+a {
+    display: block;
+}
+
+.primary {
+    background-color: $primary-color;
+    color: #000;
+    border: 2px solid transparent;
+
+    font-size: 14px;
+    font-family: Vazirmatn,sans-serif;
+    letter-spacing: .015em;
+    line-height: 1;
+    position: relative;
+    font-weight: 800;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    margin: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0;
+    outline: 0;
+    transition: color .5s cubic-bezier(.45,0,.55,1),background-color .5s cubic-bezier(.45,0,.55,1),border-color .5s cubic-bezier(.45,0,.55,1),background-position .5s cubic-bezier(.45,0,.55,1);
+    padding: 26px 60px 22px;
+}
