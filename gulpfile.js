@@ -28,6 +28,12 @@ function jsTask() {
     .pipe(dest('public/js', { sourcemaps: '.' }));
 }
 
+// JavaScript Task
+function imgTask() {
+  return src('src/img/*{jpg,png,gif,svg}')
+    .pipe(dest('public/img'));
+}
+
 function browsersyncServe(cb) {
   browsersync.init({
     server: {
@@ -44,7 +50,7 @@ function browsersyncReload(cb) {
 
 // Watch Task
 function watchTask() {
-  watch(['src/*.html', 'src/**/*.scss', 'src/**/*.js'], series(htmlTask, scssTask, jsTask, browsersyncReload));
+  watch(['src/*.html', 'src/**/*.scss', 'src/**/*.js'], series(htmlTask, scssTask, jsTask, imgTask, browsersyncReload));
 }
 
 // Default Gulp Task
@@ -52,6 +58,7 @@ exports.default = series(
   htmlTask,
   scssTask,
   jsTask,
+  imgTask,
   browsersyncServe,
   watchTask
 );
