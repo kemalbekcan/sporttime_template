@@ -3,3 +3,5 @@
 .idea/sporttime_template.iml
 .idea/vcs.xml
 .idea/workspace.xml
+package-lock.json
+yarn.lock
