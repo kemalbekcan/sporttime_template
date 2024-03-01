@@ -1,0 +1,10 @@
+.fitness-info { 
+    border: 1px solid red;
+    
+    color: #fff;
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -2,15 +2,14 @@
 
 header {
     border: 1px solid red;
-    max-width: 1825px;
     width: 100%;
     height: 90px;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     align-items: center;
-    position: relative;
     z-index: 30;
+    position: absolute;
+    left: 0;
+    top: 0;
 
     .navbar {
         width: 100%;

@@ -1,63 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anasayfa</title>
-    <link href="./scss/app.scss">
-    <link rel="stylesheet" href="css/app.css">
-</head>
+    <link href="./scss/app.scss" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
 
-<body>
+  <body class="home-page">
     <header>
-        <div class="navbar">
-            <div class="navbar-inner">
-                <a id="logo" href="/">
-                    <img src="/img/sporttime-fitness-center.png" alt="logo" width="182" height="48">
-                </a>
-                <ul class="nav text-sm">
-                    <li>
-                        <a href="/">
-                            <span>
-                                Anasayfa
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/contact">
-                            <span>
-                                Hakkımızda
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/galeri">
-                            <span>
-                                Galeri
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/paketler">
-                            <span>
-                                Paketler
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/blog">
-                            <span>
-                                Blog
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+      <div class="navbar">
+        <div class="navbar-inner">
+          <a id="logo" href="/">
+            <img
+              src="/img/sporttime-fitness-center.png"
+              alt="logo"
+              width="182"
+              height="48"
+            />
+          </a>
+          <ul class="nav text-sm">
+            <li>
+              <a href="/">
+                <span> Anasayfa </span>
+              </a>
+            </li>
+            <li>
+              <a href="/contact">
+                <span> Hakkımızda </span>
+              </a>
+            </li>
+            <li>
+              <a href="/galeri">
+                <span> Galeri </span>
+              </a>
+            </li>
+            <li>
+              <a href="/paketler">
+                <span> Paketler </span>
+              </a>
+            </li>
+            <li>
+              <a href="/blog">
+                <span> Blog </span>
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </header>
 
-    <script src="js/script.js"></script>
-</body>
+    <section class="fitness-slider">
+      <!-- <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center">Anasayfa</h1>
+                </div>
+            </div>
+        </div> -->
+      <img src="/img/fitness_bg.png" alt="logo" width="100%" height="900" />
+    </section>
 
+    <section class="program">
+      <h2 class="program__title">PROGRAMLARIMIZ</h2>
+      <p class="program__description">
+        Sağlıklı ve fit bir yaşam için tasarlanmış özel antrenman
+        programlarımızı keşfedin!
+      </p>
+      <div class="program__container">
+        <div class="program__cards">
+          <div class="program__card">
+            <img src="/img/gym_day.png" alt="" />
+            <div class="program__card__content">
+              <div>
+                <span>Antrenör</span>
+                <span>.</span>
+                <span>Güç</span>
+              </div>
+              <div>
+                <h2>Gym Day</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="program__card">
+            <img src="/img/cardio_workout.png" alt="" />
+            <div class="">
+              <span>Antrenör</span>
+              <span>.</span>
+              <span>Güç</span>
+            </div>
+          </div>
+
+          <div class="program__card">
+            <img src="/img/gym_day.png" alt="" />
+            <div class="">
+              <span>Antrenör</span>
+              <span>.</span>
+              <span>Güç</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="review">
+      <div class="review__item-1">
+        <div class="review__item-1__img"></div>
+      </div>
+      <div class="review__item-2">
+        <div class="review__item-2__img">
+          <div class="review__item-2__critics">
+            <h2>
+              Modern , tam donanımlı , son teknoloji ekipmanlarıyla ve hiçbir
+              salonda olmayan samimi , tecrübeli , ahlaklı antrenörleriyle
+              kesinlikle İstanbul’un en iyi spor salonudur.
+            </h2>
+            <span>Kayitli Uye</span>
+            <p>Yunus OZEN</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="innovation">
+      <div class="innovation__container">
+        <div class="tabs">
+          <h2 class="tab">Güçlü</h2>
+          <h2 class="tab">Hikayemİz</h2>
+          <h2 class="tab">Anlayış</h2>
+          <h2 class="tab">Planımız</h2>
+        </div>
+        <div>
+          <h2>Güçlü</h2>
+          <p>
+            Kaslarınızı güçlendirecek, dayanıklılığınızı artıracak özel
+            egzersizlerle tanışın!
+          </p>
+        </div>
+      </div>
+      <div class="innovation-properties"></div>
+    </section>
+
+    <section class="fitness-info">
+        <div class="fitness-info__cards">
+            <div class="fitness-info__cards__card">
+                <div class="fitness-info__cards__left">
+
+                </div>
+                <div class="fitness-info__cards__right">
+
+                </div>
+            </div>
+            <div class="fitness-info__cards__card">
+                <div class="fitness-info__cards__left">
+
+                </div>
+                <div class="fitness-info__cards__right">
+
+                </div>
+            </div>
+            <div class="fitness-info__cards__card">
+                <div class="fitness-info__cards__left">
+
+                </div>
+                <div class="fitness-info__cards__right">
+
+                </div>
+            </div>
+            <div class="fitness-info__cards__card">
+                <div class="fitness-info__cards__left">
+
+                </div>
+                <div class="fitness-info__cards__right">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

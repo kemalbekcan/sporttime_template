@@ -1,0 +1,23 @@
+.innovation {
+    background-color: #fff;
+    margin-top: 0;
+
+    &__container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tabs {
+
+        .tab {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+    }
+}

@@ -1,0 +1,40 @@
+.program { 
+    position: relative;
+
+    &__title {
+        color: #fff;
+        font-size: 3.875rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    &__description {
+        color: #fff;
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &__container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__cards { 
+        display: flex;
+        gap: 28px;
+    }
+
+    &__card {
+        margin-top: 79px;
+        border-bottom: 1px solid gray;
+
+        &__content {
+            color: #fff;
+            border: 1px solid red;
+        }
+    }
+}
