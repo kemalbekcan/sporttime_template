@@ -26,9 +26,19 @@
 @import 'components/_review.scss';
 @import 'components/_innovation.scss';
 @import 'components/_info.scss';
+@import 'components/_gallery.scss';
+@import 'components/_price.scss';
+@import 'components/_line-gallery.scss';
+@import 'components/_sign-form';
 
 // pages
 @import 'pages/_home.scss';
+@import 'pages/_sign';
+
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-color: black;

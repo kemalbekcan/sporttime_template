@@ -1,0 +1,28 @@
+@import '../sass-utils/_variables.scss';
+
+.gallery-page{
+    header{
+        position: relative;
+        background-color: #333435;
+    }
+}
+
+.gallery{
+    background-color: #fff;
+    border: 1px solid green;
+    &__images{
+        max-width: 1500px;
+        margin: 0 auto;
+        border: 1px solid blue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 130px 0;
+        gap: 48px;
+        .gallery__image{
+            width: 450px;
+            height: 300px;
+
+        }
+    }
+}
