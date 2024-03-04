@@ -41,6 +41,10 @@ header {
                         //display: block;
                         //height: 25px;
 
+                        .active{
+                                background-size: 100% 100%;
+                        }
+
                         span {
                             padding-top: 3px;
                             background-image: linear-gradient(to top, $primary-color 0, $primary-color 4px,transparent 4px,transparent 100%);
@@ -49,9 +53,13 @@ header {
                             background-size: 0 100%;
                             transition: background-size .25s ease-out;
 
+                        
+
                             &:hover {
                                 background-size: 100% 100%;
                             }
+
+                            
                         }
                     }
                 }

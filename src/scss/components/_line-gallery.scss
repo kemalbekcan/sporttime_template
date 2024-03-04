@@ -1,0 +1,15 @@
+.line__gallery {
+    border: 1px solid green;
+    padding: 40px;
+  &__images {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  &__image {
+    width: 195px;
+    height: 195px;
+}
+}
