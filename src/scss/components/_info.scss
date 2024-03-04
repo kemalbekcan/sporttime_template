@@ -1,10 +1,47 @@
-.fitness-info { 
-    border: 1px solid red;
-    
+.fitness-info {     
     color: #fff;
 
     &__cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+
+        &__card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &__content {
+                padding-left: 60px;
+                padding-right: 64px;
+
+                h2 {
+                    margin: 0;
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            &__left {
+                width: 50%;
+
+                img { 
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+            }
+
+            &__right {
+                width: 50%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+            }
+        }
     }
 }
