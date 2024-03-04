@@ -8,8 +8,8 @@
 @import 'vendors/_swiper.scss';
 
 // base
-@import url('base/reset.css');
-@import url('base/normalize.css');
+@import 'base/reset.scss';
+@import 'base/normalize.scss';
 @import 'base/_typography.scss';
 
 // layout
@@ -34,14 +34,3 @@
 // pages
 @import 'pages/_home.scss';
 @import 'pages/_sign';
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: black;
-}
-
-
