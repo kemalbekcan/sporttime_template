@@ -34,16 +34,13 @@ header {
                     height: 25px;
 
                     a {
-
                         text-decoration: none;
                         text-transform: uppercase;
                         color: $header-light-color;
                         font-weight: 600;
-                        //display: block;
-                        //height: 25px;
 
                         .active{
-                                background-size: 100% 100%;
+                            background-size: 100% 100%;
                         }
 
                         span {
@@ -54,13 +51,9 @@ header {
                             background-size: 0 100%;
                             transition: background-size .25s ease-out;
 
-                        
-
                             &:hover {
                                 background-size: 100% 100%;
                             }
-
-                            
                         }
                     }
                 }
