@@ -3,7 +3,6 @@
 }
 
 .price{
-    border: 1px solid red;
     margin-top: 80px;
     margin-bottom: 160px;
     &__title{
@@ -79,4 +78,13 @@
         }
     }
    
+}
+
+@media  (max-width: '445px') {
+    .price__title{
+        font-size: 2.25rem;
+    }
+    .price-card{
+        padding: 30px !important;
+    }
 }
