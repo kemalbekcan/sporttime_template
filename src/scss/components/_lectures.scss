@@ -79,6 +79,7 @@
         }
         &:nth-child(8) {
             border-top: none;
+            border-right: none;
         }
     }
 
@@ -127,6 +128,8 @@
             line-height: 24.5px;
         }
 
-        
+        &:last-child {
+            border-right: none;
+        }
     }
 }
