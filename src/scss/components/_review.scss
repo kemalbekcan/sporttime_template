@@ -26,21 +26,29 @@
             height: 800px;
 
             h2 {
-                font-size: 32px;
+                font-size: 48px;
+                font-weight: 500;
+                line-height: 50.0002px;
                 color: #fff;
                 text-align: center;
             }
 
             span {
+                margin-top: 46px;
                 display: block;
-                font-size: 16px;
-                color: #fff;
+                font-size: 12px;
+                line-height: 14px;
+                font-weight: 500;
+                color: #B7B7B7;
                 text-align: center;
+                margin-bottom: 9px;
             }
 
             p {
-                font-size: 16px;
-                color: #fff;
+                font-size: 24px;
+                line-height: 30px;
+                font-weight: 600;
+                color: #FFFFFF;
                 text-align: center;
             }
         }
