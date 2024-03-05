@@ -72,12 +72,12 @@
           <div class="program__card">
             <img src="/img/gym_day.png" alt="" />
             <div class="program__card__content">
-              <div>
+              <div class="program__card__content__properties">
                 <span>Antrenör</span>
                 <span>.</span>
                 <span>Güç</span>
               </div>
-              <div>
+              <div class="program__card__content__title">
                 <h2>Gym Day</h2>
               </div>
             </div>
@@ -85,21 +85,32 @@
 
           <div class="program__card">
             <img src="/img/cardio_workout.png" alt="" />
-            <div class="">
-              <span>Antrenör</span>
-              <span>.</span>
-              <span>Güç</span>
+            <div class="program__card__content">
+              <div class="program__card__content__properties">
+                <span>Antrenör</span>
+                <span>.</span>
+                <span>Güç</span>
+              </div>
+              <div class="program__card__content__title">
+                <h2>Cardio Workout</h2>
+              </div>
             </div>
           </div>
 
           <div class="program__card">
-            <img src="/img/gym_day.png" alt="" />
-            <div class="">
-              <span>Antrenör</span>
-              <span>.</span>
-              <span>Güç</span>
+            <img src="/img/body-strength.png" alt="" />
+            <div class="program__card__content">
+              <div class="program__card__content__properties">
+                <span>Antrenör</span>
+                <span>.</span>
+                <span>Güç</span>
+              </div>
+              <div class="program__card__content__title">
+                <h2>Body Strength</h2>
+              </div>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
@@ -220,135 +231,222 @@
     </section>
 
     <section class="lectures-programmer">
-      <h2>Ders Programı</h2>
+      <div class="lectures-programmer__container">
+        <h2 class="lectures-programmer__title">Ders Programı</h2>
 
-      <ul>
-        <li>
-          <span>Tüm EĞİTİMLER</span>
-        </li>
-        <li>
-          <span>Bodybuilding</span>
-        </li>
-        <li>
-          <span>Cardio</span>
-        </li>
-        <li>
-          <span>Gym</span>
-        </li>
-        <li>
-          <span>Powerlifting</span>
-        </li>
-      </ul>
+        <ul class="lectures-programmer__tabs">
+          <li>
+            <span>Tüm EĞİTİMLER</span>
+          </li>
+          <li>
+            <span>Bodybuilding</span>
+          </li>
+          <li>
+            <span>Cardio</span>
+          </li>
+          <li>
+            <span>Gym</span>
+          </li>
+          <li>
+            <span>Powerlifting</span>
+          </li>
+        </ul>
 
-      <table>
-        <thead>
-          <tr>
-            <th></th>
-          </tr>
-          <tr>
-            <th>Pazartesi</th>
-          </tr>
-          <tr>
-            <th>Sali</th>
-          </tr>
-          <tr>
-            <th>Carsamba</th>
-          </tr>
-          <tr>
-            <th>Persembe</th>
-          </tr>
-          <tr>
-            <th>Cuma</th>
-          </tr>
-          <tr>
-            <th>Cumartesi</th>
-          </tr>
-          <tr>
-            <th>Pazar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>07:00 - 08:00</td>
-            <td>
-              <span>Fitness Class</span>
-            </td>
-            <td>
-              <span>Open GYM</span>
-            </td>
-            <td>
-              <span></span>
-            </td>
-            <td>
-              <span>Cardio Box</span>
-            </td>
-            <td>
-              <span>Intense Bodybuilding</span>
-            </td>
-            <td>
-              <span></span>
-            </td>
-            <td>
-              <span>Open GYM</span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              08:00 - 09:00
-            </td>
-            <td>
-              <span>Open GYM</span>
-            </td>
-            <td>
-            </td>
-            <td>
-              <span>Body Balance</span>
-            </td>
-            <td></td>
-            <td></td>
-            <td>
-              <span>Body Pump</span>
-            </td>
-            <td>
-              <span>Crossfit</span>
-            </td>
-          </tr>
-          <tr>
-            <td>09:00 - 10:00</td>
-            <td></td>
-            <td>
-              <span>Crossfit</span>
-            </td>
-            <td></td>
-            <td>
-              <span>Body Falance</span>
-            </td>
-            <td>
-              <span>Open GYM</span>
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Cardio Box</td>
-            <td></td>
-            <td>
-              <span>Fitnes Class</span>
-            </td>
-            <td></td>
-            <td>
-              <span>Cardio Box</span>
-            </td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>11:00 - 12:00</td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Pazartesi</th>
+              <th>Salı</th>
+              <th>Çarşamba</th>
+              <th>Perşembe</th>
+              <th>Cuma</th>
+              <th>Cumartesi</th>
+              <th>Pazar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>07:00 - 08:00</td>
+              <td>
+                <span>Fitness Class</span>
+              </td>
+              <td>
+                <span>Open GYM</span>
+              </td>
+              <td>
+                <span></span>
+              </td>
+              <td>
+                <span>Cardio Box</span>
+              </td>
+              <td>
+                <span>Intense Bodybuilding</span>
+              </td>
+              <td>
+                <span></span>
+              </td>
+              <td>
+                <span>Open GYM</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                08:00 - 09:00
+              </td>
+              <td>
+                <span>Open GYM</span>
+              </td>
+              <td>
+              </td>
+              <td>
+                <span>Body Balance</span>
+              </td>
+              <td></td>
+              <td></td>
+              <td>
+                <span>Body Pump</span>
+              </td>
+              <td>
+                <span>Crossfit</span>
+              </td>
+            </tr>
+            <tr>
+              <td>09:00 - 10:00</td>
+              <td></td>
+              <td>
+                <span>Crossfit</span>
+              </td>
+              <td></td>
+              <td>
+                <span>Body Falance</span>
+              </td>
+              <td>
+                <span>Open GYM</span>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Cardio Box</td>
+              <td></td>
+              <td>
+                <span>Fitnes Class</span>
+              </td>
+              <td></td>
+              <td>
+                <span>Cardio Box</span>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>11:00 - 12:00</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
+
+    <section class="meet-teams">
+        <h2 class="meet-teams__title">EĞİTMENLERİMİZLE TANIŞIN</h2>
+        <div class="meet-teams__cards">
+          <div class="meet-teams__cards__card">
+            <div class="meet-teams__cards__card__img">
+              <img
+                src="/img/yunus-ozen.jpg"
+                alt="Yunus OZEN"
+                width="345"
+                height="495.5"
+              />
+              <div class="meet-teams__cards__card__content">
+                <p>Antrenör</p>
+                <h2>Yunus OZEN</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="meet-teams__cards__card">
+            <div class="meet-teams__cards__card__img">
+              <img
+                src="/img/ilayda_bas.jpg"
+                alt="Ilayda BAS"
+                width="345"
+                height="495.5"
+              />
+              <div class="meet-teams__cards__card__content">
+                <p>Antrenör</p>
+                <h2>Yunus OZEN</h2>
+              </div>
+            </div>
+          </div>
+          
+          <div class="meet-teams__cards__card">
+            <div class="meet-teams__cards__card__img">
+              <img
+                src="/img/semih-alpaydin.jpg"
+                alt="Semih Alpaydin"
+                width="345"
+                height="495.5"
+              />
+              <div class="meet-teams__cards__card__content">
+                <p>Antrenör</p>
+                <h2>Yunus OZEN</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="meet-teams__cards__card">
+            <div class="meet-teams__cards__card__img">
+              <img
+                src="/img/rojda-dogan.jpg"
+                alt="Rojda DOGAN"
+                width="345"
+                height="495.5"
+              />
+              <div class="meet-teams__cards__card__content">
+                <p>Antrenör</p>
+                <h2>Rojda DOGAN</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="meet-teams__cards__card">
+            <div class="meet-teams__cards__card__img">
+              <img
+                src="/img/ali-yigit-donder.jpg"
+                alt="Ali Yigit DONDER"
+                width="345"
+                height="495.5"
+              />
+              <div class="meet-teams__cards__card__content">
+                <p>Antrenör</p>
+                <h2>Ali Yigit DONDER</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="meet-teams__cards__card">
+            <div class="meet-teams__cards__card__img">
+              <img
+                src="/img/emre-talha-kaymakci.jpg"
+                alt="Emre Talha KAYMAKCI"
+                width="345"
+                height="495.5"
+              />
+              <div class="meet-teams__cards__card__content">
+                <p>Antrenör</p>
+                <h2>Emre Talha KAYMAKCI</h2>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </section>
+
+    <section class="bmi"></section>
+
     <section class="line__gallery">
       <div class="line__gallery__images">
         <img class="line__gallery__image" src="./img/Sporttime-1.jpg" alt="">
@@ -361,6 +459,8 @@
         <img class="line__gallery__image" src="./img/Sporttime-19.jpg" alt="">
     </div>
     </section>
+
+    <footer></footer>
 
     <script src="js/script.js"></script>
   </body>
