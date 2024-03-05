@@ -5,11 +5,18 @@
         background-color: #333435;
     }
     .sign{
-        margin: 100px 0;
+        margin: 100px auto;
+        max-width: 1300px;
+
         &__title{
             font-size: 48px;
             text-align: center;
             margin-bottom: 48px;
+            font-weight: bold;
+        }
+        &-form{
+            padding: 20px 30px;
+            border: 1px solid red;
         }
     }
 }
