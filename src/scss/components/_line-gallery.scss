@@ -1,13 +1,16 @@
 .line__gallery {
-    border: 1px solid green;
     padding: 40px;
   
   &__images {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   &__image {
