@@ -61,3 +61,75 @@ header {
         }
     }
 }
+
+
+@media (max-width: '1024px' ) {
+    .desktop-header {
+        display: none;
+    }
+
+    .mobile-header {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        align-items: flex-start;
+        z-index: 30;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        &__navbar {
+            background-color: #333435;
+            width: 100%;
+            
+            padding-left: 51px;
+            padding-right: 51px;
+
+            &__top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &__hamburger-icon {
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+
+            &__bottom {
+                display: none;
+                padding-top: 39px;
+                padding-bottom: 42px;
+
+                &__lists {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+
+                    &__list {
+                        text-transform: uppercase;
+
+                        &__item {
+                            text-decoration: none;
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: #fff;
+                            line-height: 21.98px;
+                        }
+                    }
+                }
+
+                &.active {
+                    display: block;
+                }
+            }
+        }
+    }
+  }
+
+  @media (min-width: '1025px' ) {
+    .mobile-header {
+        display: none;
+    }
+  }
