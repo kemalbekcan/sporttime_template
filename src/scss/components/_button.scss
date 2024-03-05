@@ -52,3 +52,9 @@ a {
     line-height: 38px;
   }
 }
+
+@media (max-width: '475px') {
+  .btn-secondary{
+    padding: 12px 24px !important;
+  }
+}

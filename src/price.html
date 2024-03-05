@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/app.css" />
+    <script
+    src="https://kit.fontawesome.com/2227aa2941.js"
+    crossorigin="anonymous"
+  ></script>
     <title>Paketlerimiz</title>
   </head>
   <body class="price-page">
-    <header>
+    <header class="desktop-header">
       <div class="navbar">
         <div class="navbar-inner">
           <a id="logo" href="/">
@@ -43,6 +47,57 @@
         </div>
       </div>
     </header>
+    <header class="mobile-header">
+      <div class="mobile-header__navbar">
+        <div class="mobile-header__navbar__top">
+          <div class="mobile-header__navbar__top__logo">
+            <a id="logo" href="/">
+              <img
+                src="/img/sporttime-fitness-center.png"
+                alt="logo"
+                width="182"
+                height="48"
+              />
+            </a>
+          </div>
+          <div class="mobile-header__navbar__top__hamburger-icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <div class="mobile-header__navbar__bottom">
+          <ul class="mobile-header__navbar__bottom__lists">
+            <li class="mobile-header__navbar__bottom__lists__list">
+              <a
+                class="mobile-header__navbar__bottom__lists__list__item"
+                href="/"
+                >Anasayfa</a
+              >
+            </li>
+            <li class="mobile-header__navbar__bottom__lists__list">
+              <a
+                class="mobile-header__navbar__bottom__lists__list__item"
+                href="/contact.html"
+                >Iletisim</a
+              >
+            </li>
+            <li class="mobile-header__navbar__bottom__lists__list">
+              <a
+                class="mobile-header__navbar__bottom__lists__list__item"
+                href="/gallery.html"
+                >Galeri</a
+              >
+            </li>
+            <li class="mobile-header__navbar__bottom__lists__list">
+              <a
+                class="mobile-header__navbar__bottom__lists__list__item"
+                href="/price.html"
+                >Paketler</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <img src="./img/Price-banner.jpg" width="100%" alt="banner" />
     <section class="price">
       <h2 class="price__title">PAKETLERİMİZ</h2>
@@ -59,7 +114,7 @@
             <li class="price-card__tag">Grup Dersleri</li>
             <li class="price-card__tag">Kişiye Özel Program</li>
           </ul>
-          <button class="price-card__button">
+          <button class="btn-secondary">
             <a href="./sign.html">Paketi Seç</a>
           </button>
         </div>
@@ -72,7 +127,7 @@
             <li class="price-card__tag">Grup Dersleri</li>
             <li class="price-card__tag">Kişiye Özel Program</li>
           </ul>
-          <button class="price-card__button">
+          <button class="btn-secondary">
             <a href="./sign.html">Paketi Seç</a>
           </button>
         </div>
@@ -85,7 +140,7 @@
             <li class="price-card__tag">Grup Dersleri</li>
             <li class="price-card__tag">Kişiye Özel Program</li>
           </ul>
-          <button class="price-card__button">
+          <button class="btn-secondary">
             <a href="./sign.html">Paketi Seç</a>
           </button>
         </div>
@@ -103,5 +158,28 @@
         <img class="line__gallery__image" src="./img/Sporttime-19.jpg" alt="" />
       </div>
     </section>
+    <footer>
+      <div class="footer-head">
+        <div class="footer-header__left">
+          <img
+            src="/img/sporttime-fitness-center.png"
+            alt="logo"
+            width="182"
+            height="48"
+          />
+        </div>
+        <div class="footer-head__right">
+          <h2>Egzersize başla!</h2>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © 2023
+          <a href="https://linrime.com/">LINRIME SOFTWARE SOLUTIONS LLC</a>, ALL
+          RIGHTS RESERVED
+        </p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
