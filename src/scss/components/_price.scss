@@ -80,11 +80,18 @@
    
 }
 
+
 @media  (max-width: '445px') {
     .price__title{
         font-size: 2.25rem;
     }
     .price-card{
         padding: 30px !important;
+    }
+}
+
+@media  (max-width: '766px'){
+    .price-card{
+        width: calc(100% - 20px);
     }
 }
