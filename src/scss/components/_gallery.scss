@@ -9,18 +9,26 @@
 
 .gallery{
     background-color: #fff;
+    &__title{
+        padding-block: 80px ;
+        font-size: 3.875rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-align: center;
+        line-height: 64px;
+        
+    }
     &__images{
         max-width: 1500px;
         margin: 0 auto;
+        padding-bottom: 120px ;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 130px 0;
         gap: 48px;
         .gallery__image{
             width: 30%;
             height: 300px;
-
         }
     }
 }
