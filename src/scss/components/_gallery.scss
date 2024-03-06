@@ -9,28 +9,33 @@
 
 .gallery{
     background-color: #fff;
-    border: 1px solid green;
     &__images{
         max-width: 1500px;
         margin: 0 auto;
-        border: 1px solid blue;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         padding: 130px 0;
         gap: 48px;
         .gallery__image{
-            width: 450px;
+            width: 30%;
             height: 300px;
 
         }
     }
 }
 
-@media  (max-width: '475px') {
+@media (max-width:'964px'){
     .gallery__image{
-        border: 1px solid red;
-        width: 250px !important;
-        height: 200px !important;
+        width: 40% !important;
+        height: 300px;
+
+    }
+}
+@media (max-width:'768px'){
+    .gallery__image{
+        width: 90% !important;
+        height: 300px;
+
     }
 }
