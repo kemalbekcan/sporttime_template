@@ -34,6 +34,7 @@
             height: 50px;
             padding: 5px 10px;
             line-height: 20px;
+            outline: none;
         }
 
 
@@ -76,4 +77,54 @@
         
     }
     
+}
+
+@media (max-width:'900px'){
+
+    .sign-form{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sign-form__info{
+        margin-bottom: 260px;
+    }
+
+    .package{
+        position:fixed;
+        z-index: 999;
+        bottom: 0;
+    }
+
+    .sign-page footer{
+        display: none;
+    }
+
+}
+
+@media (max-width:'400px'){
+
+    .sign-form__info{
+        padding: 24px;
+    }
+
+    .package{
+        padding: 28px 10px !important;
+    }
+
+    .package__top-desc{
+        font-size: 16px !important;
+    }
+
+    .package__top-change{
+        font-size: 14px !important;
+    }
+
+    .package__current{
+        font-size: 24px !important;
+    }
+
+    .btn-secondary{
+        width: 100%;
+    }
 }

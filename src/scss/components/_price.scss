@@ -1,6 +1,12 @@
 .price-page{
     background-color: #fff;
+    &__img{
+        width: 100%;
+        
+    }   
 }
+
+
 
 .price{
     margin-top: 80px;
@@ -82,6 +88,7 @@
 
 
 @media  (max-width: '445px') {
+
     .price__title{
         font-size: 2.25rem;
     }
@@ -91,6 +98,7 @@
 }
 
 @media  (max-width: '766px'){
+
     .price-card{
         width: calc(100% - 20px);
     }
