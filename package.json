@@ -19,6 +19,7 @@
     "cssnano": "^6.0.3",
     "cssnano-preset-lite": "^3.0.1",
     "del": "^7.1.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-postcss": "^10.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-terser": "^2.1.0",
