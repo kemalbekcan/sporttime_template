@@ -10,7 +10,7 @@
 
 .price{
     margin-top: 80px;
-    margin-bottom: 160px;
+    margin-bottom: 80px;
     &__title{
         font-size: 3.875rem;
         font-weight: 600;
@@ -84,6 +84,17 @@
         }
     }
    
+}
+
+@media  (max-width: '280px'){
+.price-card__title{
+    font-size: 50px !important;
+}
+
+.price-card__description{
+    font-size: 20px !important;
+}
+
 }
 
 
