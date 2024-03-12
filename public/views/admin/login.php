@@ -52,8 +52,19 @@ if (isset($_POST['login'])) {
 } 
 ?>
 
-<form method="post">
-    <input type="text" name="email" placeholder="Email" />
-    <input type="password" name="password" placeholder="Password" />
-    <button type="submit" name="login">Login</button>
-</form>
+<section class="admin-login">
+    <img src="./img/linrime_logo.png" alt="" width="200px">
+    <form action="" method="post" class="form">
+        <p class="form__title">Please fill in your unique admin login details below</p>
+        <div class="form__field">
+        <label for="">Email Address</label>
+        <input type="text" name="email" placeholder="Email">
+        </div>
+        <div class="form__field">
+        <label for="">Password</label>
+        <input type="password" name="password" placeholder="Password">
+        </div>
+        <a href="" class="form__forgot">Forgot Password ?</a>
+        <button type="submit" name="login">Login</button>  
+    </form>
+</section>
