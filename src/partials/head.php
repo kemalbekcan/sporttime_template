@@ -20,6 +20,9 @@
         case '/sporttime_template/public/admin':
             $page_title = 'Admin - Linrime'; 
             break;
+        case '/sporttime_template/public/forgot-password':
+            $page_title = 'Forgot Password - Linrime'; 
+            break;
         case '/sporttime_template/public/dashboard':
             $page_title = 'Dashboard - Linrime'; 
             break;
@@ -37,7 +40,9 @@
     <?php 
         $request = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-        if (str_contains($request, 'admin') || str_contains($request, 'dashboard')) {
+        if (str_contains($request, 'admin') 
+        || str_contains($request, 'dashboard') 
+        || str_contains($request, 'forgot-password')) {
             echo '<link rel="stylesheet" href="css/admin.css" />';
         }
         else {

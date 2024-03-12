@@ -21,6 +21,9 @@
         case '/sporttime_template/public/admin':
             require __DIR__ . '/views/admin/login.php';
             break;
+        case '/sporttime_template/public/forgot-password':
+            require __DIR__ . '/views/admin/forgot-password.php';
+            break;
         case '/sporttime_template/public/dashboard':
             require __DIR__ . '/views/admin/dashboard.php';
             break;

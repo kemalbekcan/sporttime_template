@@ -52,6 +52,8 @@
             break;
         case '/sporttime_template/public/admin':
             break;
+        case '/sporttime_template/public/forgot-password':
+            break;
         case '/sporttime_template/public/dashboard':
             break;
         case '/sporttime_template/public/404':
@@ -64,7 +66,7 @@
     <?php endif; ?>
 
     <?php
-    if (!str_contains($request, 'admin') && !str_contains($request, 'dashboard')) {
+    if (!str_contains($request, 'admin') && !str_contains($request, 'dashboard') && !str_contains($request, 'forgot-password') ) {
         include './partials/mobile-navigation.php';
     }
     ?>
@@ -76,7 +78,7 @@
     <?php 
     $request = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
     
-    if(!str_contains($request, 'admin') && !str_contains($request, 'dashboard')) {
+    if(!str_contains($request, 'admin') && !str_contains($request, 'dashboard') && !str_contains($request, 'forgot-password')) {
         include 'partials/footer.php';
     }
     ?>

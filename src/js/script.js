@@ -5,7 +5,7 @@ const mobileNav = document.querySelector(
 );
 const toggleNav = document.querySelector(".mobile-header__navbar__bottom");
 
-mobileNav.addEventListener("click", () => {
+mobileNav?.addEventListener("click", () => {
   console.log("clicked");
 
   toggleNav.classList.toggle("active");

@@ -52,7 +52,7 @@ if (isset($_POST['login'])) {
         <label for="">Password</label>
         <input type="password" name="password" placeholder="Password">
         </div>
-        <a href="" class="form__forgot">Forgot Password ?</a>
+        <a href="/sporttime_template/public/forgot-password" class="form__forgot">Forgot Password ?</a>
         <button type="submit" name="login">Login</button>  
     </form>
 </section>
