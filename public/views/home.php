@@ -1,116 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anasayfa</title>
-    <link rel="stylesheet" href="css/app.css" />
-    <script
-      src="https://kit.fontawesome.com/2227aa2941.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+<?php
+// Sayfa başlığını tanımlayın
+$page_title = 'Ana Sayfa - Sporttime Fitness';
 
-  <body class="home-page">
-    <header class="desktop-header">
-      <div class="navbar">
-        <div class="navbar-inner">
-          <a id="logo" href="/">
-            <img
-              src="/img/sporttime-fitness-center.png"
-              alt="logo"
-              width="182"
-              height="48"
-            />
-          </a>
-          <ul class="nav text-sm">
-            <li>
-              <a href="/">
-                <span class="active"> Anasayfa </span>
-              </a>
-            </li>
-            <li>
-              <a href="/contact.html">
-                <span> İLETİŞİM </span>
-              </a>
-            </li>
-            <li>
-              <a href="/gallery.html">
-                <span> Galerİ </span>
-              </a>
-            </li>
-            <li>
-              <a href="/price.html">
-                <span> Paketler </span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
+// Layout dosyasını çağırın
+include '../index.php';
+?>
 
-    <header class="mobile-header">
-      <div class="mobile-header__navbar">
-        <div class="mobile-header__navbar__top">
-          <div class="mobile-header__navbar__top__logo">
-            <a id="logo" href="/">
-              <img
-                class="mobile-header__navbar__top__logo__img"
-                src="/img/sporttime-fitness-center.png"
-                alt="logo"
-                width="182"
-                height="48"
-              />
-              <img
-                class="mobile-header__navbar__top__logo__img-icon"
-                src="/img/sporttime-icon-logo.png"
-                alt="logo"
-                width="40"
-                height="30"
-              />
-            </a>
-          </div>
-          <div class="mobile-header__navbar__top__hamburger-icon">
-            <i class="fa-solid fa-bars"></i>
+<section class="fitness-slider swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="fitness-slider__container">
+            <img src="./img/fitness_bg.png" alt="slide 1" />
+            <div class="fitness-slider__container__content">
+              <h2>Fitness Yolculuğumuzda Bize Katılın</h2>
+              <button class="btn-secondary">DAHA FAZLA</button>
+            </div>
           </div>
         </div>
-        <div class="mobile-header__navbar__bottom">
-          <ul class="mobile-header__navbar__bottom__lists">
-            <li class="mobile-header__navbar__bottom__lists__list">
-              <a
-                class="mobile-header__navbar__bottom__lists__list__item"
-                href="/"
-                >Anasayfa</a
-              >
-            </li>
-            <li class="mobile-header__navbar__bottom__lists__list">
-              <a
-                class="mobile-header__navbar__bottom__lists__list__item"
-                href="/contact.html"
-                >İLETİŞİM</a
-              >
-            </li>
-            <li class="mobile-header__navbar__bottom__lists__list">
-              <a
-                class="mobile-header__navbar__bottom__lists__list__item"
-                href="/gallery.html"
-                >Galerİ</a
-              >
-            </li>
-            <li class="mobile-header__navbar__bottom__lists__list">
-              <a
-                class="mobile-header__navbar__bottom__lists__list__item"
-                href="/price.html"
-                >Paketler</a
-              >
-            </li>
-          </ul>
+        <div class="swiper-slide">
+          <img src="./img/fitness_bg.png" alt="slide 1" />
         </div>
+        <div class="swiper-slide">
+          <img src="./img/fitness_bg.png" alt="slide 1" />
+        </div>
+        ...
       </div>
-    </header>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
 
-    <section class="fitness-slider">
-      <img src="/img/fitness_bg.png" alt="logo" width="100%" height="900" />
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
     </section>
 
     <section class="program">
@@ -122,7 +47,7 @@
       <div class="program__container">
         <div class="program__cards">
           <div class="program__card">
-            <img src="/img/gym_day.png" alt="" />
+            <img src="./img/gym_day.png" alt="" />
             <div class="program__card__content">
               <div class="program__card__content__properties">
                 <span>Antrenör</span>
@@ -136,7 +61,7 @@
           </div>
 
           <div class="program__card">
-            <img src="/img/cardio_workout.png" alt="" />
+            <img src="./img/cardio_workout.png" alt="" />
             <div class="program__card__content">
               <div class="program__card__content__properties">
                 <span>Antrenör</span>
@@ -150,7 +75,7 @@
           </div>
 
           <div class="program__card">
-            <img src="/img/body-strength.png" alt="" />
+            <img src="./img/body-strength.png" alt="" />
             <div class="program__card__content">
               <div class="program__card__content__properties">
                 <span>Antrenör</span>
@@ -220,7 +145,7 @@
             </div>
           </div>
           <div class="fitness-info__cards__card__right">
-            <img src="/img/runner.png" alt="" />
+            <img src="./img/runner.png" alt="" />
           </div>
         </div>
         <div class="fitness-info__cards__card">
@@ -238,12 +163,12 @@
             </div>
           </div>
           <div class="fitness-info__cards__card__right">
-            <img src="/img/cardio.png" alt="" />
+            <img src="./img/cardio.png" alt="" />
           </div>
         </div>
         <div class="fitness-info__cards__card">
           <div class="fitness-info__cards__card__left">
-            <img src="/img/equipment.png" alt="" />
+            <img src="./img/equipment.png" alt="" />
           </div>
           <div class="fitness-info__cards__card__right">
             <div class="fitness-info__cards__card__content">
@@ -261,7 +186,7 @@
         </div>
         <div class="fitness-info__cards__card">
           <div class="fitness-info__cards__left">
-            <img src="/img/nutrition.png" alt="" />
+            <img src="./img/nutrition.png" alt="" />
           </div>
           <div class="fitness-info__cards__right">
             <div class="fitness-info__cards__card__content">
@@ -399,7 +324,7 @@
         <div class="meet-teams__cards__card">
           <div class="meet-teams__cards__card__img">
             <img
-              src="/img/yunus-ozen.jpg"
+              src="./img/yunus-ozen.jpg"
               alt="Yunus OZEN"
               width="345"
               height="495.5"
@@ -414,7 +339,7 @@
         <div class="meet-teams__cards__card">
           <div class="meet-teams__cards__card__img">
             <img
-              src="/img/ilayda_bas.jpg"
+              src="./img/ilayda_bas.jpg"
               alt="Ilayda BAS"
               width="345"
               height="495.5"
@@ -429,7 +354,7 @@
         <div class="meet-teams__cards__card">
           <div class="meet-teams__cards__card__img">
             <img
-              src="/img/semih-alpaydin.jpg"
+              src="./img/semih-alpaydin.jpg"
               alt="Semih Alpaydin"
               width="345"
               height="495.5"
@@ -444,7 +369,7 @@
         <div class="meet-teams__cards__card">
           <div class="meet-teams__cards__card__img">
             <img
-              src="/img/rojda-dogan.jpg"
+              src="./img/rojda-dogan.jpg"
               alt="Rojda DOGAN"
               width="345"
               height="495.5"
@@ -459,7 +384,7 @@
         <div class="meet-teams__cards__card">
           <div class="meet-teams__cards__card__img">
             <img
-              src="/img/ali-yigit-donder.jpg"
+              src="./img/ali-yigit-donder.jpg"
               alt="Ali Yigit DONDER"
               width="345"
               height="495.5"
@@ -474,7 +399,7 @@
         <div class="meet-teams__cards__card">
           <div class="meet-teams__cards__card__img">
             <img
-              src="/img/emre-talha-kaymakci.jpg"
+              src="./img/emre-talha-kaymakci.jpg"
               alt="Emre Talha KAYMAKCI"
               width="345"
               height="495.5"
@@ -534,30 +459,3 @@
         />
       </div>
     </section>
-
-    <footer>
-      <div class="footer-head">
-        <div class="footer-header__left">
-          <img
-            src="/img/sporttime-fitness-center.png"
-            alt="logo"
-            width="182"
-            height="48"
-          />
-        </div>
-        <div class="footer-head__right">
-          <h2>Egzersize başla!</h2>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>
-          © 2023
-          <a href="https://linrime.com/">LINRIME SOFTWARE SOLUTIONS LLC</a>, ALL
-          RIGHTS RESERVED
-        </p>
-      </div>
-    </footer>
-
-    <script src="js/script.js"></script>
-  </body>
-</html>

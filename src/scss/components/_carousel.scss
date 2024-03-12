@@ -6,6 +6,91 @@
     left: 0;
     width: 100%;
     height: 900px;
+    animation: fadeIn ease 3s;
+    z-index: 100;
+
+    &__container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &__content {
+            position: absolute;
+            top: 0; 
+            left: 0;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            animation: 3s slide-right;
+            z-index: 20;
+
+            h2 {
+                margin-left: 348px;
+                color: #fff;
+                width: 40%;
+                text-align: left;
+                font-size: 82px;
+                font-weight: 500;
+                line-height: 76px;
+            }
+
+            button {
+                margin-top: 44px;
+                margin-left: 348px;
+                width: 200px;
+            }
+        }
+        
+    }
+
+    .swiper-wrapper {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+        .swiper-slide {
+            background-color: #000;
+            width: 100%;
+            height: 100%;
+
+            img {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .swiper-scrollbar {
+        display: none;
+    }
+
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .swiper-button-next {
+        display: none;
+    }
+
+    .swiper-pagination {
+        border: 1px solid red;
+        position: relative;
+        margin-top: -10px;
+        z-index: 999;
+    }
 }
 
 @media (max-width: '1024px' ) {
@@ -17,5 +102,32 @@
             width: 100%;
             height: auto;
         }
+    }
+}
+
+@keyframes slide-right {
+    from {
+        margin-left: -100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+@keyframes slide-left {
+    from {
+        margin-left: 100%;
+      }
+    to {
+        margin-left: 0%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
     }
 }
