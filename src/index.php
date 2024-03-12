@@ -52,6 +52,8 @@
             break;
         case '/sporttime_template/public/admin':
             break;
+        case '/sporttime_template/public/dashboard':
+            break;
         case '/sporttime_template/public/404':
             break;
     }
@@ -62,9 +64,7 @@
     <?php endif; ?>
 
     <?php
-    if (str_contains($request, 'admin')) {
-    }
-    else {
+    if (!str_contains($request, 'admin') && !str_contains($request, 'dashboard')) {
         include './partials/mobile-navigation.php';
     }
     ?>
@@ -75,7 +75,8 @@
 
     <?php 
     $request = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-    if ($request != '/sporttime_template/public/admin') {
+    
+    if(!str_contains($request, 'admin') && !str_contains($request, 'dashboard')) {
         include 'partials/footer.php';
     }
     ?>

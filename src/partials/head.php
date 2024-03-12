@@ -20,6 +20,9 @@
         case '/sporttime_template/public/admin':
             $page_title = 'Admin - Linrime'; 
             break;
+        case '/sporttime_template/public/dashboard':
+            $page_title = 'Dashboard - Linrime'; 
+            break;
         default:
             http_response_code(404);
             $page_title = '404 - Sporttime Fitness'; 
@@ -34,7 +37,7 @@
     <?php 
         $request = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-        if (str_contains($request, 'admin')) {
+        if (str_contains($request, 'admin') || str_contains($request, 'dashboard')) {
             echo '<link rel="stylesheet" href="css/admin.css" />';
         }
         else {

@@ -38,7 +38,7 @@ if (isset($_POST['login'])) {
             $_SESSION['email'] = $email; 
 
             // Redirect to the user's dashboard 
-            header("Location: admin/dashboard.php"); exit;
+            header("Location: admin/dashboard"); exit;
         } else { 
             echo "Incorrect password!"; 
         } 
