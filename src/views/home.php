@@ -1,11 +1,3 @@
-<?php
-// Sayfa başlığını tanımlayın
-$page_title = 'Ana Sayfa - Sporttime Fitness';
-
-// Layout dosyasını çağırın
-include '../index.php';
-?>
-
 <section class="fitness-slider swiper">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
