@@ -27,7 +27,7 @@ if (isset($_POST['login'])) {
             $_SESSION['id'] = $id; 
             $_SESSION['email'] = $email; 
 
-            header("Location: admin/dashboard"); exit;
+            header("Location: dashboard"); exit;
         } else { 
             echo "Incorrect password!"; 
         } 
