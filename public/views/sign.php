@@ -137,7 +137,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['payment']) && $result->
             <label for="email">Email Adresi</label>
             <input type="text" name="email" id="email" />
           </div>
-          <div class="sign-form__field">
+          <!-- <div class="sign-form__field">
             <label for="city">Şehir</label>
             <input type="text" name="city" id="city">
           </div>
@@ -152,7 +152,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['payment']) && $result->
           <div class="sign-form__field">
             <label for="zipcode">Posta Kodu</label>
             <input type="text" name="zipcode" id="zipcode" />
-          </div>
+          </div> -->
           <div class="sign-form__field">
             <label for="">Cinsiyet</label>
             <select name="gender" id="">
