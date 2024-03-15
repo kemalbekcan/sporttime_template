@@ -17,6 +17,18 @@
         case '/sporttime_template/public/on-kayit':
             $page_title = 'Ön Kayıt - Sporttime Fitness'; 
             break;
+        case '/sporttime_template/public/gizlilik-politikasi':
+            $page_title = 'Gizlilik Politikası - Sporttime Fitness'; 
+            break;
+        case '/sporttime_template/public/mesafeli-satis-sozlesmesi':
+            $page_title = 'Mesafeli Satış Sözleşmesi - Sporttime Fitness'; 
+            break;
+        case '/sporttime_template/public/sozlesmenin-feshi-ve-iade':
+            $page_title = 'Sözleşmenin Feshi ve İade - Sporttime Fitness'; 
+            break;
+        case '/sporttime_template/public/hakkimizda':
+            $page_title = 'Hakkımızda - Sporttime Fitness';
+            break; 
         case '/sporttime_template/public/success':
             $page_title = 'Ödeme Bilgisi - Sporttime Fitness'; 
             break;

@@ -35,6 +35,13 @@
             <li class="mobile-header__navbar__bottom__lists__list">
               <a
                 class="mobile-header__navbar__bottom__lists__list__item"
+                href="/"
+                >HAKKIMIZDA</a
+              >
+            </li>
+            <li class="mobile-header__navbar__bottom__lists__list">
+              <a
+                class="mobile-header__navbar__bottom__lists__list__item"
                 href="./contact.html"
                 >İLETİŞİM</a
               >

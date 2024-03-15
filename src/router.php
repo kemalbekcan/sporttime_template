@@ -22,6 +22,18 @@
             $package = isset($query_params['package']) ? $query_params['package'] : null;
             require __DIR__ . '/views/sign.php';
             break;
+        case '/sporttime_template/public/gizlilik-politikasi':
+            require __DIR__ . '/views/privacy-policy.php';
+            break;
+        case '/sporttime_template/public/mesafeli-satis-sozlesmesi':
+            require __DIR__ . '/views/contract.php';
+            break;
+        case '/sporttime_template/public/sozlesmenin-feshi-ve-iade':
+            require __DIR__ . '/views/agreement.php';
+            break;
+        case '/sporttime_template/public/hakkimizda':
+            require __DIR__ . '/views/about-us.php';
+            break;
         case '/sporttime_template/public/success':
             require __DIR__ . '/views/success.php';
             break;

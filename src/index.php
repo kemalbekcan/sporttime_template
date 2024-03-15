@@ -28,6 +28,18 @@
         case '/sporttime_template/public/404':
             $class_name = '404-page';
             break;
+        case '/sporttime_template/public/gizlilik-politikasi':
+            $class_name = 'privacy-policy-page';
+            break;
+        case '/sporttime_template/public/mesafeli-satis-sozlesmesi':
+            $class_name = 'contract-page';
+            break;
+        case '/sporttime_template/public/sozlesmenin-feshi-ve-iade':
+            $class_name = 'agreement-page';
+            break;
+        case '/sporttime_template/public/hakkimizda':
+            $class_name = 'about-us-page';
+            break;
     }
     ?>
 
@@ -52,6 +64,18 @@
             break;
         case '/sporttime_template/public/on-kayit':
             $navigation = 'navigation.php';
+            break;
+        case '/sporttime_template/public/gizlilik-politikasi':
+            $navigation = 'fixed-navigation.php';
+            break;
+        case '/sporttime_template/public/mesafeli-satis-sozlesmesi':
+            $navigation = 'fixed-navigation.php';
+            break;
+        case '/sporttime_template/public/sozlesmenin-feshi-ve-iade':
+            $navigation = 'fixed-navigation.php';
+            break;
+        case '/sporttime_template/public/hakkimizda':
+            $navigation = 'fixed-navigation.php';
             break;
         case '/sporttime_template/public/admin':
             break;

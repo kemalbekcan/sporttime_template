@@ -1,0 +1,24 @@
+.agreement-page {
+  color: #b7b7b7;
+  header {
+    position: relative;
+  }
+
+  .agreement {
+    max-width: 1200px;
+    margin: 50px auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 25px;
+    &-list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    &-item {
+      list-style: decimal inside;
+      line-height: 24px;
+    }
+  }
+}

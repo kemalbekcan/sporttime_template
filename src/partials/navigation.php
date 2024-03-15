@@ -15,6 +15,11 @@
           </a>
         </li>
         <li>
+          <a href="/sporttime_template/public/hakkimizda" title="Hakkımızda">
+            <span>Hakkımızda</span>
+          </a>
+        </li>
+        <li>
           <a href="/sporttime_template/public/iletisim" title="İletişim">
           <?php if ($request === '/sporttime_template/public/iletisim') {
               echo '<span class="active">İletişim</span>';
