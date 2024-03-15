@@ -22,6 +22,9 @@
         case '/sporttime_template/public/on-kayit':
             $class_name = 'sign-page';
             break;
+        case '/sporttime_template/public/success':
+            $class_name = 'success-page';
+            break;
         case '/sporttime_template/public/404':
             $class_name = '404-page';
             break;

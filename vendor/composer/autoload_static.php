@@ -11,12 +11,20 @@ class ComposerStaticInitf79d4489f2159f3968de8529e6b59994
         array (
             'PHPMailer\\PHPMailer\\' => 20,
         ),
+        'I' => 
+        array (
+            'Iyzipay\\' => 8,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'PHPMailer\\PHPMailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
+        'Iyzipay\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/iyzico/iyzipay-php/src/Iyzipay',
         ),
     );
 

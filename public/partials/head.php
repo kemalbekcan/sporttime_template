@@ -27,7 +27,10 @@
             $page_title = 'Sözleşmenin Feshi ve İade - Sporttime Fitness'; 
             break;
         case '/sporttime_template/public/hakkimizda':
-            $page_title = 'Hakkımızda - Sporttime Fitness'; 
+            $page_title = 'Hakkımızda - Sporttime Fitness';
+            break; 
+        case '/sporttime_template/public/success':
+            $page_title = 'Ödeme Bilgisi - Sporttime Fitness'; 
             break;
         case '/sporttime_template/public/admin':
             $page_title = 'Admin - Linrime'; 
@@ -55,10 +58,10 @@
         if (str_contains($request, 'admin') 
         || str_contains($request, 'dashboard') 
         || str_contains($request, 'forgot-password')) {
-            echo '<link rel="stylesheet" href="css/admin.css" />';
+            echo '<link rel="stylesheet" href="/sporttime_template/public/css/admin.css" />';
         }
         else {
-            echo '<link rel="stylesheet" href="css/app.css" />
+            echo '<link rel="stylesheet" href="/sporttime_template/public/css/app.css" />
             <link
               rel="stylesheet"
               href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"

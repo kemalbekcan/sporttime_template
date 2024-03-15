@@ -17,6 +17,10 @@
         &-form{
             padding: 20px 30px;
             display: flex;
+
+            .pay {
+                display: none;
+            }
         }
     }
 }

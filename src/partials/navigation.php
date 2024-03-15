@@ -7,7 +7,11 @@
       <ul class="nav text-sm">
         <li>
           <a href="/sporttime_template/public/anasayfa" title="Anasayfa">
-            <span class="active">Anasayfa</span>
+            <?php if ($request === '/sporttime_template/public/anasayfa') {
+              echo '<span class="active">Anasayfa</span>';
+            } else {
+              echo '<span>Anasayfa</span>';
+            } ?>
           </a>
         </li>
         <li>
@@ -17,17 +21,29 @@
         </li>
         <li>
           <a href="/sporttime_template/public/iletisim" title="İletişim">
-            <span>İletişim</span>
+          <?php if ($request === '/sporttime_template/public/iletisim') {
+              echo '<span class="active">İletişim</span>';
+            } else {
+              echo '<span>İletişim</span>';
+            } ?>  
           </a>
         </li>
         <li>
           <a href="/sporttime_template/public/galeri" title="Galeri">
-            <span>Galeri</span>
+            <?php if ($request === '/sporttime_template/public/galeri') {
+              echo '<span class="active">Galeri</span>';
+            } else {
+              echo '<span>Galeri</span>';
+            } ?>
           </a>
         </li>
         <li>
           <a href="/sporttime_template/public/paketler" title="Paketler">
-            <span>Paketler</span>
+            <?php if ($request === '/sporttime_template/public/paketler') {
+              echo '<span class="active">Paketler</span>';
+            } else {
+              echo '<span>Paketler</span>';
+            } ?>
           </a>
         </li>
       </ul>
