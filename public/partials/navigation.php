@@ -16,24 +16,10 @@
         </li>
         <li>
           <a href="/sporttime_template/public/hakkimizda" title="Hakkımızda">
-            <span>Hakkımızda</span>
-          </a>
-        </li>
-        <li>
-          <a href="/sporttime_template/public/iletisim" title="İletişim">
-          <?php if ($request === '/sporttime_template/public/iletisim') {
-              echo '<span class="active">İletişim</span>';
+            <?php if ($request === '/sporttime_template/public/hakkimizda') {
+              echo '<span class="active">Hakkımızda</span>';
             } else {
-              echo '<span>İletişim</span>';
-            } ?>  
-          </a>
-        </li>
-        <li>
-          <a href="/sporttime_template/public/galeri" title="Galeri">
-            <?php if ($request === '/sporttime_template/public/galeri') {
-              echo '<span class="active">Galeri</span>';
-            } else {
-              echo '<span>Galeri</span>';
+              echo '<span>Hakkımızda</span>';
             } ?>
           </a>
         </li>
@@ -46,6 +32,24 @@
             } ?>
           </a>
         </li>
+        <li>
+          <a href="/sporttime_template/public/galeri" title="Galeri">
+            <?php if ($request === '/sporttime_template/public/galeri') {
+              echo '<span class="active">Galeri</span>';
+            } else {
+              echo '<span>Galeri</span>';
+            } ?>
+          </a>
+        </li>
+        <li>
+          <a href="/sporttime_template/public/iletisim" title="İletişim">
+          <?php if ($request === '/sporttime_template/public/iletisim') {
+              echo '<span class="active">İletişim</span>';
+            } else {
+              echo '<span>İletişim</span>';
+            } ?>  
+          </a>
+        </li>  
       </ul>
     </div>
   </div>

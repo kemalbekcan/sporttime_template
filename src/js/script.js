@@ -10,3 +10,4 @@ mobileNav?.addEventListener("click", () => {
 
   toggleNav.classList.toggle("active");
 });
+

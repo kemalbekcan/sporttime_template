@@ -54,10 +54,10 @@
             $navigation = 'navigation.php';
             break;
         case '/sporttime_template/public/iletisim':
-            $navigation = 'fixed-navigation.php';
+            $navigation = 'navigation.php';
             break;
         case '/sporttime_template/public/galeri':
-            $navigation = 'fixed-navigation.php';
+            $navigation = 'navigation.php';
             break;
         case '/sporttime_template/public/paketler':
             $navigation = 'navigation.php';
@@ -66,16 +66,16 @@
             $navigation = 'navigation.php';
             break;
         case '/sporttime_template/public/gizlilik-politikasi':
-            $navigation = 'fixed-navigation.php';
+            $navigation = 'navigation.php';
             break;
         case '/sporttime_template/public/mesafeli-satis-sozlesmesi':
-            $navigation = 'fixed-navigation.php';
+            $navigation = 'navigation.php';
             break;
         case '/sporttime_template/public/sozlesmenin-feshi-ve-iade':
-            $navigation = 'fixed-navigation.php';
+            $navigation = 'navigation.php';
             break;
         case '/sporttime_template/public/hakkimizda':
-            $navigation = 'fixed-navigation.php';
+            $navigation = 'navigation.php';
             break;
         case '/sporttime_template/public/admin':
             break;

@@ -27,8 +27,8 @@
             $page_title = 'Sözleşmenin Feshi ve İade - Sporttime Fitness'; 
             break;
         case '/sporttime_template/public/hakkimizda':
-            $page_title = 'Hakkımızda - Sporttime Fitness';
-            break; 
+            $page_title = 'Hakkımızda - Sporttime Fitness'; 
+            break;
         case '/sporttime_template/public/success':
             $page_title = 'Ödeme Bilgisi - Sporttime Fitness'; 
             break;
