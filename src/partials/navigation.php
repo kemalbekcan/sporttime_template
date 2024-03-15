@@ -11,6 +11,11 @@
           </a>
         </li>
         <li>
+          <a href="/sporttime_template/public/hakkimizda" title="Hakkımızda">
+            <span>Hakkımızda</span>
+          </a>
+        </li>
+        <li>
           <a href="/sporttime_template/public/iletisim" title="İletişim">
             <span>İletişim</span>
           </a>

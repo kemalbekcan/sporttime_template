@@ -18,6 +18,18 @@
         case '/sporttime_template/public/on-kayit':
             require __DIR__ . '/views/sign.php';
             break;
+        case '/sporttime_template/public/gizlilik-politikasi':
+            require __DIR__ . '/views/privacy-policy.php';
+            break;
+        case '/sporttime_template/public/mesafeli-satis-sozlesmesi':
+            require __DIR__ . '/views/contract.php';
+            break;
+        case '/sporttime_template/public/sozlesmenin-feshi-ve-iade':
+            require __DIR__ . '/views/agreement.php';
+            break;
+        case '/sporttime_template/public/hakkimizda':
+            require __DIR__ . '/views/about-us.php';
+            break;
         case '/sporttime_template/public/admin':
             require __DIR__ . '/views/admin/login.php';
             break;
