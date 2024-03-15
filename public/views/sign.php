@@ -44,16 +44,12 @@ $ipAdress = $_SERVER['REMOTE_ADDR'];
 $currentDate = date('Y-m-d H:i:s');
 
 if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['payment']) && $result->num_rows > 0) {
-  echo "Ödeme ekranına yönlendiriliyorsunuz...";
   $_POST['registirationdate'] = date('Y-m-d H:i:s');
-  echo gen_uuid();
-  echo $_POST['name'];
   $options = new \Iyzipay\Options();
   $options->setApiKey("sandbox-Xd2YrQOCIeVCv4f01KR8tFFbripmByXt");
   $options->setSecretKey("sandbox-FTyZIVtSFwYzWn8WW56CZ0zK3MHNGrbv");
   $options->setBaseUrl("https://sandbox-api.iyzipay.com");
           
-  // $request->setConversationId(uniqid());
   $request = new \Iyzipay\Request\CreateCheckoutFormInitializeRequest();
   $request->setLocale(\Iyzipay\Model\Locale::TR);
   $request->setConversationId(gen_uuid());
