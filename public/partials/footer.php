@@ -11,15 +11,17 @@
     <div class="footer-info">
       <div class="footer-info-left">
         <h6 class="footer-info-title">BİZE ULAŞIN</h6>
-        <p><a href="">support@sporttimefitness.com</a></p>
-        <p><a href="">+90 531 864 90 31</a></p>
+        <p><a href="mailto:hello@example.com">support@sporttimefitness.com</a></p>
+        <p><a href="tel:+90 531 864 9031">+90 531 864 90 31</a></p>
       </div>
       <div class="footer-info-right">
         <div class="footer-info-right-row">
           <div class="location">
             <h6 class="footer-info-title">LOKASYONUMUZ</h6>
             <h2 class="row-title">İstanbul</h2>
-            <h2 class="row-info">Yukarı Dudullu, <br> Metrocorner AVM, <br> Ümraniye / İstanbul <br>34775</h2>
+            <a href="https://www.google.com/maps/place/Sporttime+fitness+center/@41.016164,29.1627658,17z/data=!3m1!4b1!4m6!3m5!1s0x14cacf164b37012f:0x333ae9e22547ab07!8m2!3d41.016164!4d29.1627658!16s%2Fg%2F11l2fg1km1?entry=ttu" style="text-decoration: none;" target="_blank" >
+              <h2 class="row-info">Yukarı Dudullu, <br> Metrocorner AVM, <br> Ümraniye / İstanbul <br>34775</h2>
+            </a>
           </div>
         </div>
         <div class="footer-info-right-row">
@@ -47,6 +49,6 @@
         <li><a href="/sporttime_template/public/sozlesmenin-feshi-ve-iade">Sözleşme Feshi ve İade</a></li>
       </ul>
     </div>
-    <img src="./img/logo_band_colored.png" alt="">
+    <img src="./img/logo_band_white.png" alt="">
   </div>
 </footer>

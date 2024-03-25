@@ -1,4 +1,4 @@
-<header class="desktop-header">
+<header class="desktop-header relative">
   <div class="navbar">
     <div class="navbar-inner">
       <a id="logo" href="/sporttime_template/public/anasayfa" alt="Sporttime Fitness Center">

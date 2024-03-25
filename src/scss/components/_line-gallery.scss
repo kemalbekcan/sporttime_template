@@ -1,21 +1,24 @@
 .line__gallery {
-    padding: 40px 28px;
-  
-  &__images {
+  padding: 40px 28px;
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    overflow-x: scroll;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
   }
 
-  &__image {
+  .swiper-slide img {
+    display: block;
     width: 195px;
     height: 195px;
-    flex: 1 1 auto;
+    object-fit: cover;
   }
 }

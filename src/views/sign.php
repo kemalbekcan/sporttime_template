@@ -174,7 +174,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['payment']) && $result->
         <div class="package">
           <div class="package__top">
             <h4 class="package__top-desc">Seçtiğiniz Paket</h4>
-            <a class="package__top-change" href="./price.html">Değiştir</a>
+            <a class="package__top-change" href="/sporttime_template/public/paketler">Değiştir</a>
           </div>
           <div class="package__current">
             <h3><?php echo $row['title']; ?></h3>

@@ -1,6 +1,6 @@
 .contact-page {
   color: white;
-  header {
+  .relative {
     position: relative;
     border-bottom: 2px solid #333435;
   }
@@ -45,6 +45,7 @@
   &__right {
     display: flex;
     flex-direction: column;
+    width: 40%;
     &-title {
       font-size: 46px;
       text-align: center;
@@ -58,11 +59,21 @@
     gap: 8px;
     &-field {
       display: flex;
-      gap: 30px;
+      flex-direction: column;
+      gap: 8px;
+      width: 100%;
       input {
         height: 50px;
         padding: 10px 20px;
         outline: none;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #333435;
+        color: #fff;
+        transition: all 300ms ease-in-out;
+        &:focus {
+          border-bottom: 2px solid #c6e413;
+        }
       }
     }
     textarea {
@@ -72,10 +83,18 @@
       max-height: 225px;
       width: 100%;
       resize: vertical;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid #333435;
+      color: #fff;
+      transition: border-bottom 300ms ease-in-out;
+      &:focus {
+        border-bottom: 2px solid #c6e413;
+      }
     }
   }
   .btn-secondary {
-    margin-top: 10px;
+    margin-top: 24px;
   }
 }
 
@@ -95,10 +114,9 @@
 }
 
 @media (max-width: "670px") {
-
-    .contact{
-        padding-inline: 20px;
-    }
+  .contact {
+    padding-inline: 20px;
+  }
 
   .contact__left-title span {
     line-height: 40px;

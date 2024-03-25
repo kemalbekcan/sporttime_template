@@ -1,5 +1,5 @@
 .sign-page{
-    background-color: #fff;
+    background-color: #000;
     header{
         position: relative;
         background-color: #333435;
@@ -13,6 +13,7 @@
             text-align: center;
             margin-bottom: 48px;
             font-weight: bold;
+            color: #fff;
         }
         &-form{
             padding: 20px 30px;
