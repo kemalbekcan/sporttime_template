@@ -4,7 +4,7 @@
         <p>Sizi Hayalinizdeki Forma <br> Taşıyan Adres!</p>
     </div>
 </div>
-<section class="about">
+<section class="about ">
     <h2 class="about-title">HAKKIMIZDA</h2>
     <p class="about-text">Sporttime Fitness Center, 2023 yılında spor tutkunlarına modern, yenilikçi ve etkili bir antrenman deneyimi sunmak amacıyla İstanbul'da kurulmuştur. Amatör ve profesyonel sporculara hitap eden tesisimiz, geniş ve donanımlı alanlarıyla sağlıklı bir yaşam tarzını benimseyen herkesin ihtiyaçlarını karşılamayı hedeflemektedir.</p>
     <div class="about__mission">
