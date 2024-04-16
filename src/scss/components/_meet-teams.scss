@@ -1,66 +1,71 @@
 .meet-teams {
-    margin-bottom: 60px;
-    margin-left: 28px;
+  margin-bottom: 60px;
+  padding-inline: 28px;
+
+  &__title {
+    font-size: 62px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 51px;
+  }
+
+  .swiper{
+    cursor: grab;
+  }
+
+  .swiper-card{
+    border-bottom: 1px solid #3d3d3d;
+    height: 600px;
+    width: 345px;
+    margin: 0 auto;
+
+    .teams-desc {
+      margin-top: 18px;
+      color: #fff;
+
+      p {
+        font-size: 12px;
+        line-height: 18px;
+        color: #989898;
+        font-weight: 500;
+      }
+
+      h2 {
+        margin-top: 7px;
+        font-size: 24px;
+        font-weight: 600;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: "880px") {
+  .meet-teams {
+    &__title {
+      font-size: 2.25rem;
+    }
+  }
+}
+
+@media (max-width: "480px") {
+  .meet-teams {
+    margin-left: 0;
 
     &__title {
-        font-size: 62px;
-        font-weight: 700;
-        margin-bottom: 24px;
-        color: #fff;
-        text-align: center;
-        margin-bottom: 51px;
+      font-size: 1.5rem;
     }
-
-    &__cards {
-        display: flex;
-        gap: 27px;
-        overflow-x: scroll;
-        height: 600px;
-
-        &::-webkit-scrollbar {
-            display: none;
-        }
-
-        &__card {
-            border-bottom: 1px solid #3d3d3d;
-
-            &__content {
-                margin-top: 18px;
-                color: #fff;
-
-                p{
-                    font-size: 12px;
-                    line-height: 18px;
-                    color: #989898;
-                    font-weight: 500;
-                }
-
-                h2 {
-                    margin-top: 7px;
-                    font-size: 24px;
-                    font-weight: 600;
-                    color: #fff;
-                }
-            }
-        }
-    }
+  }
 }
 
-@media (max-width: '880px' ) {
-    .meet-teams {
-
-        &__title {
-            font-size: 2.25rem;
-        }
+@media (max-width: "378px") {
+.swiper-card{
+    height: 500px !important;
+    img{
+        height: 350px;
+        width: 230px;
     }
 }
-
-@media (max-width: '480px' ) {
-    .meet-teams {
-        margin-left: 0;
-
-        &__title {
-            font-size: 1.5rem;
-        }
-    }
 }

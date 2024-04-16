@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'reference' => '26cf035c6c29f4262af46b579cf4f90b182d0aa1',
+        'name' => '__root__',
+        'dev' => true,
+    ),
+    'versions' => array(
+        '__root__' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => '26cf035c6c29f4262af46b579cf4f90b182d0aa1',
+            'dev_requirement' => false,
+        ),
+        'iyzico/iyzipay-php' => array(
+            'pretty_version' => 'v2.0.54',
+            'version' => '2.0.54.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../iyzico/iyzipay-php',
+            'aliases' => array(),
+            'reference' => '4a5874a63582e92338662782887da757de62c646',
+            'dev_requirement' => false,
+        ),
+        'phpmailer/phpmailer' => array(
+            'pretty_version' => 'v6.9.1',
+            'version' => '6.9.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpmailer/phpmailer',
+            'aliases' => array(),
+            'reference' => '039de174cd9c17a8389754d3b877a2ed22743e18',
+            'dev_requirement' => false,
+        ),
+    ),
+);

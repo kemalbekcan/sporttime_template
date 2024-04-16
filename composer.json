@@ -1,0 +1,6 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "iyzico/iyzipay-php": "^2.0"
+    }
+}

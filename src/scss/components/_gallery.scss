@@ -1,14 +1,14 @@
 @import '../sass-utils/_variables.scss';
 
 .gallery-page{
-    header{
+    .relative{
         position: relative;
-        background-color: #333435;
+        border-bottom: 2px solid #333435;
     }
 }
 
 .gallery{
-    background-color: #fff;
+    background-color: #000;
     &__title{
         padding-block: 80px ;
         font-size: 3.875rem;
@@ -16,6 +16,7 @@
         margin-bottom: 10px;
         text-align: center;
         line-height: 64px;
+        color: #fff;
         
     }
     &__images{

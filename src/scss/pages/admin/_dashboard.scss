@@ -1,0 +1,170 @@
+.admin-dashboard {
+    display: flex;
+
+    &__navigation {
+        width: 87%;
+        height: 101px;
+        background-color: #fff;
+        border-bottom: 1px solid #E6EFF5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 40px;
+        padding-right: 40px;
+
+        &__title {
+
+            h2 {
+                font-size: 28px;
+                font-weight: 600;
+                color: #343C6A;
+            }
+        }
+
+        &__nav {            
+
+            &__lists {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+
+                .form-search {
+                    position: relative;
+                    
+                    input {
+                        border: 1px solid #F5F7FA;
+                        border-radius: 40px;
+                        background-color: #F5F7FA;
+                        width: 255px;
+                        height: 40px;
+                        padding-left: 60px;
+                    }
+
+                    button {
+                        position: absolute;
+                        left: 25px;
+                        height: 40px;
+                        background-color: transparent;
+                        border: none;
+                        i {
+                            height: 20px;
+                            width: 20px;
+                            font-size: 20px;
+                            color: #343C6A;
+                        }
+                    }
+                }
+
+                .settings {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50px;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+
+                    i {
+                        height: 20px;
+                        width: 20px;
+                        font-size: 20px;
+                        color: #343C6A;
+                    }
+                }
+
+                .profile {
+                    width: 60px;
+                    height: 60px;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                    background-color: transparent;
+
+                    img {
+                        display: block;
+                        text-align: center;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 60px;
+                    }
+                
+                }
+            }
+        }
+    }
+
+    &__sidebar {
+        background-color: #fff;
+        border-right: 1px solid #E6EFF5;
+        height: 100vh;
+        width: 13%;
+
+        &__logo {
+            height: 101px;
+            display: flex;
+            width: 100%;
+            padding-left: 38px;
+            padding-right: 29px;
+            
+            img {
+                display: block;
+                text-align: center;
+                margin-top: auto;
+                margin-bottom: auto;
+                width: 100%;
+                height: 40px;
+            }
+        }
+
+        &__nav{
+            margin-top: 30px;
+
+            &__lists {
+
+                &__list {
+                    position: relative;
+                    height: 60px;
+
+                    &.--active {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        display: block;
+                        width: 6px;
+                        height: 100%;
+                        border-top-right-radius: 50%;
+                        border-bottom-right-radius: 50%;
+                        background-color: #2D60FF;
+                    }
+
+                    &__item {
+                        display: flex;
+                        align-items: center;
+                        height: 100%;
+                        margin-left: 6px;
+                        padding-left: 30px;
+                        text-decoration: none;
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: #B1B1B1;
+
+                        &.--active {
+                            color: #2D60FF;
+                        }
+
+                        i {
+                            height: 25px;
+                            width: 25px;
+                            font-size: 25px;
+                            color: #C5C5CF;
+                            margin-right: 25px;
+
+                            &.--active {
+                                color: #2D60FF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

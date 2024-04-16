@@ -1,0 +1,36 @@
+.contract-page{
+    color: #B7B7B7;
+    .relative {
+        position: relative;
+        border-bottom: 2px solid #333435;
+      }
+    .contract{
+        max-width: 1200px;
+        margin: 50px auto;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        &__sales{
+            padding: 25px;
+            &-title{
+                font-weight: bold;
+                font-size: 18px;
+                margin-bottom: 12px;
+            }
+            &-text{
+                margin-bottom: 12px;
+                line-height: 24px;
+            }
+            &-list{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;   
+                margin-bottom: 12px;   
+            }
+            &-item{
+                list-style: decimal inside;
+                line-height: 24px;
+                
+            }
+        }
+    }
+}

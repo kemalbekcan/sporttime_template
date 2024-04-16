@@ -9,13 +9,33 @@ const preset = litePreset({ discardComments: false });
 const browsersync = require("browser-sync").create();
 const imagemin = require("gulp-imagemin");
 
-function htmlTask() {
-  return src("src/*.html").pipe(dest("public"));
+function phpTask() {
+  return src("src/*.php").pipe(dest("public"));
+}
+
+function partialsMoveTask() {
+  return src("src/partials/*.php").pipe(dest("public/partials"));
+}
+
+function viewsMoveTask() {
+  return src("src/views/*.php").pipe(dest("public/views"));
+}
+
+function adminMoveTask() {
+  return src("src/views/admin/*.php").pipe(dest("public/views/admin"));
 }
 
 // Sass Task
 function scssTask() {
   return src("src/scss/app.scss", { sourcemaps: false })
+    .pipe(sass())
+    .pipe(postcss([cssnano({ preset, plugins: [autoprefixer] })]))
+    .pipe(dest("public/css", { sourcemaps: "." }));
+}
+
+// Sass Task
+function adminScssTask() {
+  return src("src/scss/admin.scss", { sourcemaps: false })
     .pipe(sass())
     .pipe(postcss([cssnano({ preset, plugins: [autoprefixer] })]))
     .pipe(dest("public/css", { sourcemaps: "." }));
@@ -61,14 +81,33 @@ function browsersyncReload(cb) {
 // Watch Task
 function watchTask() {
   watch(
-    ["src/*.html", "src/**/*.scss", "src/**/*.js"],
-    series(htmlTask, scssTask, jsTask, imgTask, browsersyncReload)
+    [
+      "src/*.php",
+      "src/views/*.php",
+      "src/partials/*.php",
+      "src/views/admin/*.php",
+      "src/**/*.scss",
+      "src/**/*.js",
+    ],
+    series(
+      phpTask,
+      partialsMoveTask,
+      viewsMoveTask,
+      adminMoveTask,
+      scssTask,
+      adminScssTask,
+      jsTask,
+      imgTask,
+      browsersyncReload
+    )
   );
 }
 
 // Default Gulp Task
 exports.default = series(
-  htmlTask,
+  phpTask,
+  partialsMoveTask,
+  viewsMoveTask,
   scssTask,
   jsTask,
   imgTask,
